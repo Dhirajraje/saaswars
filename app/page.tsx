@@ -10,6 +10,7 @@ import { items } from "@/components/ui/bento-sub-components";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { BackgroundBeams } from "@/components/ui/lines-background";
+import Link from "next/link";
 
 export default function Home() {
   const words = [
@@ -45,6 +46,51 @@ export default function Home() {
         </p>
         <div className="mt-4">
           <LitupButton>Join US!</LitupButton>
+        </div>
+      </div>
+      <div className="p-4 flex sticky top-2 z-50 justify-center">
+        <div className="max-w-lg overflow-clip relative bg-slate-900 flex items-center gap-4 px-6 w-full mx-auto rounded-full border-slate-100/20 p-4 border-2">
+          <Meteors number={20} />
+          <Link href="#">
+            <span className="text-indigo-600 hover:underline">
+              About
+            </span>
+          </Link>
+          <Link href="#">
+            <span className="text-indigo-600 hover:underline">
+              Wars
+            </span>
+          </Link>
+          <Link href="#">
+            <span className="text-indigo-600 hover:underline">
+              Blogs
+            </span>
+          </Link>
+          <div className="flex-grow"></div>
+          <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+            <span className="absolute inset-0 overflow-hidden rounded-full">
+              <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+            </span>
+            <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+              <span>Explore</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M10.75 8.75L14.25 12L10.75 15.25"
+                ></path>
+              </svg>
+            </div>
+            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+          </button>
         </div>
       </div>
       <div className=" w-full flex items-center justify-center bg-slate-900  overflow-hidden">
@@ -286,7 +332,7 @@ export default function Home() {
                 <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
               </div>
               <p className="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-                <br className="lg:block hidden"/>waistcoat green juice
+                <br className="lg:block hidden" />waistcoat green juice
               </p>
             </div>
           </div>
