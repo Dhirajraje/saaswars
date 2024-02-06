@@ -53,8 +53,8 @@ export default function Home() {
         </MaskContainer>
       </div>
 
-      <div className="bg-slate-900 w-full justify-evenly gap-2 flex p-4">
-        <div className=" h-3/4 md:h-1/2 w-3/4  relative max-w-sm">
+      <div className="bg-slate-900 w-full justify-evenly flex-wrap gap-4 flex p-4">
+        <div className=" h-3/4 md:h-1/2 w-full md:w-1/2 lg:w-1/3 relative max-w-sm">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
@@ -92,7 +92,7 @@ export default function Home() {
             <Meteors number={20} />
           </div>
         </div>
-        <div className=" h-3/4 md:h-1/2 w-3/4  relative max-w-sm">
+        <div className=" h-3/4 md:h-1/2 w-full md:w-1/2 lg:w-1/3 relative max-w-sm">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
@@ -130,7 +130,7 @@ export default function Home() {
             <Meteors number={20} />
           </div>
         </div>
-        <div className=" h-3/4 md:h-1/2 w-3/4  relative max-w-sm">
+        <div className=" h-3/4 md:h-1/2 w-full md:w-1/2 lg:w-1/3  relative max-w-sm">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
