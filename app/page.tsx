@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-96 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
+      <div className="h-[30rem] relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
         <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
         <Boxes />
@@ -53,7 +53,7 @@ export default function Home() {
         </MaskContainer>
       </div>
 
-      <div className=" bg-slate-900 w-full justify-evenly gap-2 flex p-4">
+      <div className="bg-slate-900 w-full justify-evenly gap-2 flex p-4">
         <div className=" h-3/4 md:h-1/2 w-3/4  relative max-w-sm">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
@@ -75,13 +75,13 @@ export default function Home() {
             </div>
 
             <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-              Meteors because they&apos;re cool
+              Meteors because they're cool
             </h1>
 
             <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-              I don&apos;t know what to write so I&apos;ll just paste something
+              I don't know what to write so I'll just paste something
               cool here. One more sentence because lorem ipsum is just
-              unacceptable. Won&apos;t ChatGPT the shit out of this.
+              unacceptable. Won't ChatGPT the shit out of this.
             </p>
 
             <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
@@ -113,13 +113,13 @@ export default function Home() {
             </div>
 
             <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-              Meteors because they&apos;re cool
+              Meteors because they're cool
             </h1>
 
             <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-              I don&apos;t know what to write so I&apos;ll just paste something
+              I don't know what to write so I'll just paste something
               cool here. One more sentence because lorem ipsum is just
-              unacceptable. Won&apos;t ChatGPT the shit out of this.
+              unacceptable. Won't ChatGPT the shit out of this.
             </p>
 
             <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
@@ -151,13 +151,13 @@ export default function Home() {
             </div>
 
             <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-              Meteors because they&apos;re cool
+              Meteors because they're cool
             </h1>
 
             <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-              I don&apos;t know what to write so I&apos;ll just paste something
+              I don't know what to write so I'll just paste something
               cool here. One more sentence because lorem ipsum is just
-              unacceptable. Won&apos;t ChatGPT the shit out of this.
+              unacceptable. Won't ChatGPT the shit out of this.
             </p>
 
             <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
