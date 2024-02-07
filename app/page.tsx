@@ -48,7 +48,7 @@ export default function Home() {
           <LitupButton>Join US!</LitupButton>
         </div>
       </div>
-      <div className="p-4 flex sticky top-2 z-50 justify-center">
+      <div className="p-4 flex sticky top-0 z-50 justify-center">
         <div className="max-w-lg overflow-clip relative bg-slate-900 flex items-center gap-4 px-6 w-full mx-auto rounded-full border-slate-100/20 p-4 border-2">
           <Meteors number={20} />
           <Link href="#">
