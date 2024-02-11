@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="bg-slate-900">
+    <main id="home" className="bg-slate-900">
       <div className="h-[30rem] relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
         <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
@@ -48,20 +48,20 @@ export default function Home() {
           <LitupButton>Join US!</LitupButton>
         </div>
       </div>
-      <div className="p-4 flex sticky top-0 z-50 justify-center">
+      <div className="p-4 flex sticky -top-2 z-50 justify-center">
         <div className="max-w-lg overflow-clip relative bg-slate-900 flex items-center gap-4 px-6 w-full mx-auto rounded-full border-slate-100/20 p-4 border-2">
           <Meteors number={20} />
-          <Link href="#">
-            <span className="text-indigo-600 hover:underline">
-              About
+          <Link href="/#home">
+            <span className="text-blue-500 font-bold">
+              SaasWars
             </span>
           </Link>
-          <Link href="#">
+          <Link href="/content/products">
             <span className="text-indigo-600 hover:underline">
               Wars
             </span>
           </Link>
-          <Link href="#">
+          <Link href="/content/blog">
             <span className="text-indigo-600 hover:underline">
               Blogs
             </span>
@@ -94,17 +94,41 @@ export default function Home() {
         </div>
       </div>
       <div className=" w-full flex items-center justify-center bg-slate-900  overflow-hidden">
-        <MaskContainer
-          revealText={
-            <p className=" max-w-screen-lg mx-auto text-slate-100 text-center  text-4xl font-bold">
-              We will be your torch on your journey of research
-            </p>
-          }
-          className="h-96 w-full"
-        >
-          Explore over <span className="text-blue-500">4,000</span> products, SAAS platforms and tools
-          that fits your need. Choose the best which fits your need. Delivering best value <span className="text-blue-500">for you!</span>.
-        </MaskContainer>
+        <section className="py-10 sm:py-16 lg:py-24">
+          <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
+              <p className="mt-3 text-xl leading-relaxed text-gray-200 md:mt-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+              <div>
+                <h3 className="font-bold text-7xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 600 + </span>
+                </h3>
+                <p className="mt-4 text-xl text-white font-medium"> Recognition awards </p>
+                <p className="text-base mt-0.5 text-gray-500"> Distributed to our contributors </p>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-7xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 4,800 + </span>
+                </h3>
+                <p className="mt-4 text-xl font-medium text-white">Products</p>
+                <p className="text-base mt-0.5 text-gray-500">Benchmarked / Analyzed</p>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-7xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 80+ </span>
+                </h3>
+                <p className="mt-4 text-xl font-medium text-white">Guides and Blogs</p>
+                <p className="text-base mt-0.5 text-gray-500">Guides to lead you properly</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
 
       <div className=" max-w-4xl mx-auto w-full justify-evenly flex-wrap flex p-2">
@@ -143,7 +167,7 @@ export default function Home() {
             </button>
 
             {/* Meaty part - Meteor effect */}
-            <Meteors number={20} />
+
           </div>
         </div>
         <div className=" h-3/4 md:h-1/2 p-2 w-full md:w-1/2 lg:w-1/3 relative max-w-sm">
@@ -181,7 +205,7 @@ export default function Home() {
             </button>
 
             {/* Meaty part - Meteor effect */}
-            <Meteors number={20} />
+
           </div>
         </div>
         <div className=" h-3/4 md:h-1/2 p-2 w-full md:w-1/2 lg:w-1/3 relative max-w-sm">
@@ -219,7 +243,7 @@ export default function Home() {
             </button>
 
             {/* Meaty part - Meteor effect */}
-            <Meteors number={20} />
+
           </div>
         </div>
       </div>
